@@ -10,7 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
-        /* Стили для ссылок внутри блока с классом .text-white-links */
         .text-black-links a {
             color: rgb(0, 0, 0);
             display: block; /* Заставляет ссылки занимать всю ширину */
@@ -33,7 +32,7 @@
 <body>
 
    <!-- Header content -->
-<header class="bg-dark text-white text-center p-4 d-flex justify-content-between align-items-center">
+<header class="bg-dark text-white text-center p-5 d-flex justify-content-between align-items-center">
     <div class="logo">
         <img src="./images/logo.jpg" alt="Логотип">
     </div>
@@ -57,7 +56,7 @@
                 </div>
     
                 <!-- Table content -->
-                <div class="table order-2 order-md-2 w-100">
+                <div class="table order-1 order-md-2 w-100">
                     <h2>Таблица</h2>
                     <table class="table table-bordered table-striped">
                         <thead>
@@ -108,7 +107,7 @@
                 </div>
     
                 <!-- List URL content -->
-                <div class="url-list order-1 order-md-0 w-100">
+                <div class="url-list order-2 order-md-0 w-100">
                     <ul>
                         <li><a href="http://www.kubsu.ru">Абсолютная гиперссылка на главную страницу сайта kubsu.ru;</a></li>
                         <li><a href="https://www.kubsu.ru/index.php">Абсолютная на главную сайта kubsu.ru в протоколе https;</a></li>
@@ -190,7 +189,7 @@
                         </select>
                         <br><br>
                         <label for="bio" class="block-label">Биография:</label>
-                        <textarea id="bio" name="bio" rows="4" cols="50" required></textarea>
+                        <textarea id="bio" name="bio" rows="4" style="width: 100%; max-width: 100%;" required></textarea>
                         <br><br>
                         <input type="checkbox" id="contract" name="contract" required>
                         <label for="contract">С контрактом ознакомлен (а)</label>
